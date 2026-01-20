@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OBMC Enrollment</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ),
+            url("https://bluprint-onemega.com/wp-content/uploads/2023/01/BP-2023-Website-Featured-Photo-OB-Montessori-2560x1440.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            background-color: #ffffff; /* pure white */
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #dee2e6;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark px-3">
+        <span class="navbar-brand fw-bold">OB Montessori Center</span>
+        <div class="ms-auto">
+            <input type="text" class="form-control form-control-sm" placeholder="Search">
+        </div>
+    </nav>
+
+    <div class="form-wrapper">
+
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Student Enrollment Form</h1>
+            <p class="text-muted">Please complete all required fields</p>
+        </div>
+
+        <form>
+
+            <div class="mb-4">
+                <h5 class="section-title">Student Information</h5>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Middle Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Gender</label>
+                        <select class="form-select">
+                            <option selected disabled>Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Grade Level</label>
+                        <select class="form-select">
+                            <option selected disabled>Select Grade</option>
+                            <option>Grade 7</option>
+                            <option>Grade 8</option>
+                            <option>Grade 9</option>
+                            <option>Grade 10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="section-title">Contact Information</h5>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="section-title">Learning Preference</h5>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mode">
+                    <label class="form-check-label">Online</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mode">
+                    <label class="form-check-label">Face to Face</label>
+                </div>
+            </div>
+
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">
+                    I confirm that the information provided is correct.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+                Submit Enrollment
+            </button>
+
+        </form>
+    </div>
+
+    <footer>
+        © 2026 OB Montessori Center
+    </footer>
+
+</body>
+</html>
